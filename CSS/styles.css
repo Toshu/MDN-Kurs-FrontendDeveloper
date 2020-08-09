@@ -18,10 +18,39 @@ h2 {
   font-size: 1.5em;
 }
 
-ul {
+ul.danger {
+  color: darkred;
+  border: none;
+}
+
+li {
+  text-align: center;
+  list-style-type: decimal-leading-zero;
+}
+
+ul.contact {
   background-color: #eeeeee;
   border: 5px solid purple;
   padding: 10px 40px;
+}
+
+ul.contact li {
+  text-align: left;
+  list-style-type: square;
+}
+
+ul.contact li:first-child {
+  list-style-type: disc;
+}
+
+span {
+  color: blue;
+  background-color: aquamarine;
+  font-weight: 600;
+}
+
+span:last-of-type {
+  background-color: beige;
 }
 
 .job-title {
@@ -39,4 +68,10 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 50em) {
+  li {
+    list-style-type: none;
+  }
 }
